@@ -1,0 +1,16 @@
+p#main {
+	color: green;
+}
+
+p.primary.other {
+	color: yellow;
+}
+
+p.primary {
+	color: red;
+	font-size: 400%;
+}
+
+p {
+	color: blue;
+}
