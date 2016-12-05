@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+
+	<style>
+	body {
+	padding: 0 20%
+	}
+	
+	.hide{
+	  display: none;
+	}
+	
+	img {
+	width: 200px;
+    }	
+	
+</style>
+
+</head>
+
+<body>
+
+	<header>
+	<h1>Javascript Events</h1>	
+	</header>
+	
+	<main>
+		<h4>Add Numbers:</h4>
+		<p>
+		<input id="num-one"> + <input id="num-two">
+		</p>
+		<p id="add-sum"></p> 
+		
+		<h4>Pictures</h4>
+		<ul>
+			<li><a data-img="simon-pic" id="simon" href="#">Simon Cowel</a></li>
+			<li><a data-img="bruce-pic" id="bruce" href="#">Bruce Willis</a></li>
+		</ul>
+		
+		<div class="hidden">
+		<img class="hide" id="simon-pic" src="http://upload.wikimedia.org/wikipedia/
+		commons/a/aa/Simon_Cowell_in_December_2011.jpg">
+		<img class="hide" id="bruce-pic" src="http://upload.wikimedia.org/wikipedia/
+		commons/0/03/Bruce_Willis_by_Gage_Skidmore.jpg">
+		</div> 
+		
+	</main>
+		<script src="events.js"></script>
+</body>
+</html>
