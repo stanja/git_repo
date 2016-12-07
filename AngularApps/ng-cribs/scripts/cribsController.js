@@ -1,10 +1,19 @@
 angular
     .module('ngCribs')
-    .controller('cribsController', function ($scope, cribsFactory) {
-        $scope.cribs;
-        cribsFactory.getCribs().success(function(data) {
-            $scope.cribs = data;
-        }).error(function(error) {
-            console.log(error);
-        });
-    });
+    .controller('cribsController', ['$scope', 'cribsFactory', function ($scope, cribsFactory) {
+
+       /* var self = this;
+        self.cribsFactory = {};*/
+
+        cribsFactory.getCribs()
+            .then(function (response) {
+                console.log(response.data);
+                $scope.cribs = (response.data);
+                console.log($scope.cribs);
+            }, function (error) {
+                console.log(error);
+            })
+
+    }]);
+
+

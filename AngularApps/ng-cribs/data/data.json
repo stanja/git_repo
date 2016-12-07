@@ -1,4 +1,5 @@
- [
+
+     [
             {
                 "type": "Condo",
                 "price": 220000, 
@@ -17,4 +18,4 @@
                 "address": "834 River Lane",
                 "description": "Great neighbourhood and lot's of nice green space"
             }
-        ]
+  ]
